@@ -1,0 +1,38 @@
+User Story 1: Display all relevant weather information.
+
+As a station monitor, I want to be able to see all the relevant information from a station to be able to forecast and monitor the weather in a specific location
+
+Acceptance criteria: 
+
+•	All the information should be visible including: temperature, humidity, atmospheric pressure, wind speed, direction the wind is blowing and the amount of rainfall 
+•	GUI should be easy to use and understandable while still being informative even for a novice user
+•	All information should update periodically
+
+Maximum amount of time allowed: 8 days
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+User Story 2: Have an information database
+
+As a system administrator, I want to have a database with all data collected from the weather stations so that the data can be easily collated and visualised. 
+
+Acceptance criteria: 
+
+•	All the information should be visible, easy to read in a table including: temperature, humidity, atmospheric pressure, wind speed, direction the wind is blowing, amount of rainfall
+•	Should be able to easily export the data to a program to visualise the data such as Excel.
+
+Maximum amount of time allowed: 8 days
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+User Story 3: Display all relevant weather system information.
+
+As a technician, I want to be able to see all the relevant information from a station to be able monitor and determine the status of the weather station in a specific location
+
+Acceptance criteria: 
+
+•	All the information should be visible including: sensor information, status of the station and make any issues apparent. 
+•	GUI should be easy to use and understandable while still being informative and providing an in depth look at the information
+•	All information should update periodically
+
+Maximum amount of time allowed: 8 days
