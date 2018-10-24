@@ -1,0 +1,11 @@
+C:\Users\Kip\Dropbox\2018\Semester 2\Advanced Software Engineering\Assesment\A2\Program\Wilderness Weather Station\Wilderness Weather Station\bin\Debug\Wilderness Weather Station.exe.config
+C:\Users\Kip\Dropbox\2018\Semester 2\Advanced Software Engineering\Assesment\A2\Program\Wilderness Weather Station\Wilderness Weather Station\bin\Debug\Wilderness Weather Station.exe
+C:\Users\Kip\Dropbox\2018\Semester 2\Advanced Software Engineering\Assesment\A2\Program\Wilderness Weather Station\Wilderness Weather Station\bin\Debug\Wilderness Weather Station.pdb
+C:\Users\Kip\Dropbox\2018\Semester 2\Advanced Software Engineering\Assesment\A2\Program\Wilderness Weather Station\Wilderness Weather Station\obj\Debug\Wilderness Weather Station.csprojAssemblyReference.cache
+C:\Users\Kip\Dropbox\2018\Semester 2\Advanced Software Engineering\Assesment\A2\Program\Wilderness Weather Station\Wilderness Weather Station\obj\Debug\Wilderness_Weather_Station.Home.resources
+C:\Users\Kip\Dropbox\2018\Semester 2\Advanced Software Engineering\Assesment\A2\Program\Wilderness Weather Station\Wilderness Weather Station\obj\Debug\Wilderness_Weather_Station.Properties.Resources.resources
+C:\Users\Kip\Dropbox\2018\Semester 2\Advanced Software Engineering\Assesment\A2\Program\Wilderness Weather Station\Wilderness Weather Station\obj\Debug\Wilderness Weather Station.csproj.GenerateResource.cache
+C:\Users\Kip\Dropbox\2018\Semester 2\Advanced Software Engineering\Assesment\A2\Program\Wilderness Weather Station\Wilderness Weather Station\obj\Debug\Wilderness Weather Station.csproj.CoreCompileInputs.cache
+C:\Users\Kip\Dropbox\2018\Semester 2\Advanced Software Engineering\Assesment\A2\Program\Wilderness Weather Station\Wilderness Weather Station\obj\Debug\Wilderness Weather Station.exe
+C:\Users\Kip\Dropbox\2018\Semester 2\Advanced Software Engineering\Assesment\A2\Program\Wilderness Weather Station\Wilderness Weather Station\obj\Debug\Wilderness Weather Station.pdb
+C:\Users\Kip\Dropbox\2018\Semester 2\Advanced Software Engineering\Assesment\A2\Program\Wilderness Weather Station\Wilderness Weather Station\obj\Debug\Wilderness_Weather_Station.Form1.resources
