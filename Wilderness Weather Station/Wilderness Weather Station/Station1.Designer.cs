@@ -29,14 +29,19 @@
         private void InitializeComponent()
         {
             this.Navigation = new System.Windows.Forms.Panel();
+            this.Sensor4Status = new System.Windows.Forms.PictureBox();
+            this.Sensor3Status = new System.Windows.Forms.PictureBox();
+            this.Sensor2Status = new System.Windows.Forms.PictureBox();
+            this.Sensor1Status = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Title = new System.Windows.Forms.Panel();
+            this.btnBack = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -44,27 +49,23 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Date_Installed = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sensor4Status = new System.Windows.Forms.PictureBox();
-            this.Sensor3Status = new System.Windows.Forms.PictureBox();
-            this.Sensor2Status = new System.Windows.Forms.PictureBox();
-            this.Sensor1Status = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnBack = new System.Windows.Forms.Button();
+            this.lblTemp = new System.Windows.Forms.Label();
+            this.lblCityName = new System.Windows.Forms.Label();
+            this.lblCountry = new System.Windows.Forms.Label();
             this.Navigation.SuspendLayout();
-            this.Title.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Sensor4Status)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Sensor3Status)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Sensor2Status)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Sensor1Status)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Title.SuspendLayout();
             this.SuspendLayout();
             // 
             // Navigation
             // 
             this.Navigation.BackColor = System.Drawing.SystemColors.Control;
+            this.Navigation.Controls.Add(this.lblCountry);
+            this.Navigation.Controls.Add(this.lblCityName);
             this.Navigation.Controls.Add(this.Sensor4Status);
             this.Navigation.Controls.Add(this.Sensor3Status);
             this.Navigation.Controls.Add(this.Sensor2Status);
@@ -73,7 +74,6 @@
             this.Navigation.Controls.Add(this.label13);
             this.Navigation.Controls.Add(this.label11);
             this.Navigation.Controls.Add(this.label10);
-            this.Navigation.Controls.Add(this.textBox1);
             this.Navigation.Controls.Add(this.label9);
             this.Navigation.Controls.Add(this.label8);
             this.Navigation.Controls.Add(this.pictureBox1);
@@ -84,6 +84,42 @@
             this.Navigation.Name = "Navigation";
             this.Navigation.Size = new System.Drawing.Size(218, 681);
             this.Navigation.TabIndex = 1;
+            // 
+            // Sensor4Status
+            // 
+            this.Sensor4Status.Image = global::Wilderness_Weather_Station.Properties.Resources.tick;
+            this.Sensor4Status.Location = new System.Drawing.Point(163, 629);
+            this.Sensor4Status.Name = "Sensor4Status";
+            this.Sensor4Status.Size = new System.Drawing.Size(35, 32);
+            this.Sensor4Status.TabIndex = 14;
+            this.Sensor4Status.TabStop = false;
+            // 
+            // Sensor3Status
+            // 
+            this.Sensor3Status.Image = global::Wilderness_Weather_Station.Properties.Resources.tick;
+            this.Sensor3Status.Location = new System.Drawing.Point(163, 591);
+            this.Sensor3Status.Name = "Sensor3Status";
+            this.Sensor3Status.Size = new System.Drawing.Size(35, 32);
+            this.Sensor3Status.TabIndex = 13;
+            this.Sensor3Status.TabStop = false;
+            // 
+            // Sensor2Status
+            // 
+            this.Sensor2Status.Image = global::Wilderness_Weather_Station.Properties.Resources.tick;
+            this.Sensor2Status.Location = new System.Drawing.Point(163, 553);
+            this.Sensor2Status.Name = "Sensor2Status";
+            this.Sensor2Status.Size = new System.Drawing.Size(35, 32);
+            this.Sensor2Status.TabIndex = 12;
+            this.Sensor2Status.TabStop = false;
+            // 
+            // Sensor1Status
+            // 
+            this.Sensor1Status.Image = global::Wilderness_Weather_Station.Properties.Resources.tick;
+            this.Sensor1Status.Location = new System.Drawing.Point(163, 515);
+            this.Sensor1Status.Name = "Sensor1Status";
+            this.Sensor1Status.Size = new System.Drawing.Size(35, 32);
+            this.Sensor1Status.TabIndex = 11;
+            this.Sensor1Status.TabStop = false;
             // 
             // label12
             // 
@@ -125,13 +161,6 @@
             this.label10.TabIndex = 7;
             this.label10.Text = "Sensor 1";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(13, 255);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(197, 20);
-            this.textBox1.TabIndex = 6;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -152,6 +181,16 @@
             this.label8.TabIndex = 4;
             this.label8.Text = "Station Information";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Wilderness_Weather_Station.Properties.Resources.outline_blank_transparent_world_map_b1b;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 97);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(218, 124);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // Title
             // 
             this.Title.BackColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -161,6 +200,16 @@
             this.Title.Name = "Title";
             this.Title.Size = new System.Drawing.Size(218, 67);
             this.Title.TabIndex = 2;
+            // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(3, 21);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(42, 23);
+            this.btnBack.TabIndex = 1;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // label1
             // 
@@ -232,84 +281,40 @@
             this.label7.TabIndex = 7;
             this.label7.Text = "Wind Speed";
             // 
-            // dataGridView1
+            // lblTemp
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Date_Installed});
-            this.dataGridView1.Location = new System.Drawing.Point(293, 125);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 8;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.lblTemp.AutoSize = true;
+            this.lblTemp.Font = new System.Drawing.Font("Prestige Elite Std", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTemp.Location = new System.Drawing.Point(331, 191);
+            this.lblTemp.Name = "lblTemp";
+            this.lblTemp.Size = new System.Drawing.Size(298, 73);
+            this.lblTemp.TabIndex = 8;
+            this.lblTemp.Text = "lblTemp";
             // 
-            // Date_Installed
+            // lblCityName
             // 
-            this.Date_Installed.HeaderText = "Date";
-            this.Date_Installed.Name = "Date_Installed";
+            this.lblCityName.AutoSize = true;
+            this.lblCityName.Location = new System.Drawing.Point(132, 271);
+            this.lblCityName.Name = "lblCityName";
+            this.lblCityName.Size = new System.Drawing.Size(41, 13);
+            this.lblCityName.TabIndex = 16;
+            this.lblCityName.Text = "label15";
             // 
-            // Sensor4Status
+            // lblCountry
             // 
-            this.Sensor4Status.Image = global::Wilderness_Weather_Station.Properties.Resources.tick;
-            this.Sensor4Status.Location = new System.Drawing.Point(163, 629);
-            this.Sensor4Status.Name = "Sensor4Status";
-            this.Sensor4Status.Size = new System.Drawing.Size(35, 32);
-            this.Sensor4Status.TabIndex = 14;
-            this.Sensor4Status.TabStop = false;
-            // 
-            // Sensor3Status
-            // 
-            this.Sensor3Status.Image = global::Wilderness_Weather_Station.Properties.Resources.tick;
-            this.Sensor3Status.Location = new System.Drawing.Point(163, 591);
-            this.Sensor3Status.Name = "Sensor3Status";
-            this.Sensor3Status.Size = new System.Drawing.Size(35, 32);
-            this.Sensor3Status.TabIndex = 13;
-            this.Sensor3Status.TabStop = false;
-            // 
-            // Sensor2Status
-            // 
-            this.Sensor2Status.Image = global::Wilderness_Weather_Station.Properties.Resources.tick;
-            this.Sensor2Status.Location = new System.Drawing.Point(163, 553);
-            this.Sensor2Status.Name = "Sensor2Status";
-            this.Sensor2Status.Size = new System.Drawing.Size(35, 32);
-            this.Sensor2Status.TabIndex = 12;
-            this.Sensor2Status.TabStop = false;
-            // 
-            // Sensor1Status
-            // 
-            this.Sensor1Status.Image = global::Wilderness_Weather_Station.Properties.Resources.tick;
-            this.Sensor1Status.Location = new System.Drawing.Point(163, 515);
-            this.Sensor1Status.Name = "Sensor1Status";
-            this.Sensor1Status.Size = new System.Drawing.Size(35, 32);
-            this.Sensor1Status.TabIndex = 11;
-            this.Sensor1Status.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Wilderness_Weather_Station.Properties.Resources.outline_blank_transparent_world_map_b1b;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 97);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(218, 124);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnBack
-            // 
-            this.btnBack.Location = new System.Drawing.Point(3, 21);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(42, 23);
-            this.btnBack.TabIndex = 1;
-            this.btnBack.Text = "Back";
-            this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            this.lblCountry.AutoSize = true;
+            this.lblCountry.Location = new System.Drawing.Point(132, 301);
+            this.lblCountry.Name = "lblCountry";
+            this.lblCountry.Size = new System.Drawing.Size(41, 13);
+            this.lblCountry.TabIndex = 17;
+            this.lblCountry.Text = "label15";
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.lblTemp);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -320,14 +325,13 @@
             this.Text = "Station 1";
             this.Navigation.ResumeLayout(false);
             this.Navigation.PerformLayout();
-            this.Title.ResumeLayout(false);
-            this.Title.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Sensor4Status)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Sensor3Status)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Sensor2Status)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Sensor1Status)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Title.ResumeLayout(false);
+            this.Title.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -346,7 +350,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
@@ -356,9 +359,10 @@
         private System.Windows.Forms.PictureBox Sensor4Status;
         private System.Windows.Forms.PictureBox Sensor3Status;
         private System.Windows.Forms.PictureBox Sensor2Status;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Date_Installed;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Label lblTemp;
+        private System.Windows.Forms.Label lblCountry;
+        private System.Windows.Forms.Label lblCityName;
     }
 }
 

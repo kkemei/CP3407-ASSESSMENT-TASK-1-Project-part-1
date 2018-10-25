@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="S1-info" targetNamespace="http://tempuri.org/S1-info.xsd" xmlns:mstns="http://tempuri.org/S1-info.xsd" xmlns="http://tempuri.org/S1-info.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="S1-info" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="_S1_info" msprop:Generator_UserDSName="S1-info">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Stations" msprop:Generator_TableClassName="StationsDataTable" msprop:Generator_TableVarName="tableStations" msprop:Generator_TablePropName="Stations" msprop:Generator_RowDeletingName="StationsRowDeleting" msprop:Generator_RowChangingName="StationsRowChanging" msprop:Generator_RowEvHandlerName="StationsRowChangeEventHandler" msprop:Generator_RowDeletedName="StationsRowDeleted" msprop:Generator_UserTableName="Stations" msprop:Generator_RowChangedName="StationsRowChanged" msprop:Generator_RowEvArgName="StationsRowChangeEvent" msprop:Generator_RowClassName="StationsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StationID" msprop:Generator_ColumnVarNameInTable="columnStationID" msprop:Generator_ColumnPropNameInRow="StationID" msprop:Generator_ColumnPropNameInTable="StationIDColumn" msprop:Generator_UserColumnName="StationID" type="xs:string" />
+              <xs:element name="Location" msprop:Generator_ColumnVarNameInTable="columnLocation" msprop:Generator_ColumnPropNameInRow="Location" msprop:Generator_ColumnPropNameInTable="LocationColumn" msprop:Generator_UserColumnName="Location" type="xs:string" minOccurs="0" />
+              <xs:element name="GPS" msprop:Generator_ColumnVarNameInTable="columnGPS" msprop:Generator_ColumnPropNameInRow="GPS" msprop:Generator_ColumnPropNameInTable="GPSColumn" msprop:Generator_UserColumnName="GPS" type="xs:string" minOccurs="0" />
+              <xs:element name="DateInstalled" msprop:Generator_ColumnVarNameInTable="columnDateInstalled" msprop:Generator_ColumnPropNameInRow="DateInstalled" msprop:Generator_ColumnPropNameInTable="DateInstalledColumn" msprop:Generator_UserColumnName="DateInstalled" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="DataTable1Key1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Stations" />
+      <xs:field xpath="mstns:StationID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
