@@ -31,6 +31,12 @@ namespace Wilderness_Weather_Station
         public class wind
         {
             public double speed { get; set; }
+            public double deg { get; set; }
+        }
+
+        public class rain
+        {
+            public double rainfall { get; set; }
         }
 
         public class sys
@@ -44,9 +50,10 @@ namespace Wilderness_Weather_Station
             public sys sys { get; set; }
             public double dt { get; set; }
             public wind wind { get; set; }
+            public rain rainfall { get; set; }
             public main main { get; set; }
             public List<weather> weatherList { get; set; }
-            public coord coordinate { get; set; }
+            public coord coord { get; set; }
         }
 
     }
