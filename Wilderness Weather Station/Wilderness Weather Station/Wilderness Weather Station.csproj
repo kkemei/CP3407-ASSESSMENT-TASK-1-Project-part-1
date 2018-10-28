@@ -64,6 +64,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>S1-info.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Sensor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sensor.Designer.cs">
+      <DependentUpon>Sensor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Station1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,9 @@
     <Compile Include="weatherInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sensor.resx">
+      <DependentUpon>Sensor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Station1.resx">
       <DependentUpon>Station1.cs</DependentUpon>
@@ -163,6 +172,9 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

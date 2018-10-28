@@ -20,7 +20,7 @@ namespace Wilderness_Weather_Station
         private void btnS1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Home S1 = new Home("Townsville");
+            Home S1 = new Home("Townsville",1);
             S1.ShowDialog();
             this.Close();
         }
@@ -28,7 +28,7 @@ namespace Wilderness_Weather_Station
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Home S1 = new Home("New York");
+            Home S1 = new Home("New York",2);
             S1.ShowDialog();
             this.Close();
         }
@@ -36,7 +36,7 @@ namespace Wilderness_Weather_Station
         private void button3_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Home S1 = new Home("Rio de Janeiro");
+            Home S1 = new Home("Rio de Janeiro",3);
             S1.ShowDialog();
             this.Close();
         }
@@ -44,7 +44,7 @@ namespace Wilderness_Weather_Station
         private void button4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Home S1 = new Home("Nairobi");
+            Home S1 = new Home("Nairobi",4);
             S1.ShowDialog();
             this.Close();
         }

@@ -11,7 +11,8 @@ namespace Wilderness_Weather_Station
     public partial class Home : Form 
     {
         const string APPID = "8537c81f4e28567a004122c1b81937d6";
-        //string cityName = "Townsville";
+        string curDate = DateTime.Now.ToString("yyyy-MM-dd_hh-mm-ss-tt");
+
         string CityName;
         string Country;
         Double Temp;
@@ -22,29 +23,17 @@ namespace Wilderness_Weather_Station
         Double Pressure;
         Double Humidity;
 
-        public Home(string station)
+        public Home(string station, int id)
         {
-            //string cityName = station;
+            int stationID = id;
             InitializeComponent();
-            getWeather(station);
+            getWeather(station, stationID);
         }
-
 
         public void WriteData()
         {
-            //FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
-
-            //if (folderBrowserDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            //{
-            //    string selectedFolder = folderBrowserDialog.SelectedPath;
-
-                //MessageBox.Show(selectedFolder);
-
-            string curDate = DateTime.Now.ToString("yyyy-MM-dd_hh-mm-ss-tt");
-
             Excel excel = new Excel(@"template.xlsx", 1);
 
-            //excel.SaveAs(selectedFolder);
             excel.WriteToExcel(0, 0, "City");
             excel.WriteToExcel(0, 1, "Country");
             excel.WriteToExcel(0, 2, "Temperature (\u00B0C)");
@@ -72,7 +61,8 @@ namespace Wilderness_Weather_Station
             excel.Close();
         }
 
-        void getWeather(string station)
+        void getWeather(string station, int stationID)
+
         {
             string cityName = station;
 
@@ -96,6 +86,7 @@ namespace Wilderness_Weather_Station
                 lblPressure.Text = string.Format("{0} Pa", outPut.main.pressure);
                 lblHumidity.Text = string.Format("{0} %", outPut.main.humidity);
                 label4.Text = string.Format("{0} Weather Station", outPut.name);
+                lblStation.Text = string.Format("Station {0}", stationID);
 
                 CityName = outPut.name;
                 Country = outPut.sys.country;
@@ -106,6 +97,9 @@ namespace Wilderness_Weather_Station
                 WindDir = outPut.wind.deg;
                 Pressure = outPut.main.pressure;
                 Humidity = outPut.main.humidity;
+
+                lblLastUpdated.Text = string.Format("Weather information last pulled from OpenWeatherMap on the: {0}", curDate);
+
             }
         }
 
@@ -120,6 +114,26 @@ namespace Wilderness_Weather_Station
         private void btnDownload_Click(object sender, EventArgs e)
         {
             WriteData();
+        }
+
+        private void Sensor1Status_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(string.Format("Sensor 1 is working correctly!"));
+        }
+
+        private void Sensor2Status_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(string.Format("Sensor 2 is working correctly!"));
+        }
+
+        private void Sensor3Status_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(string.Format("Sensor 3 is working correctly!"));
+        }
+
+        private void Sensor4Status_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(string.Format("Sensor 4 is working correctly!"));
         }
     }
 }

@@ -15,11 +15,21 @@ namespace Wilderness_Weather_Station
         Workbook wb;
         Worksheet ws;
 
+        public Excel()
+        {
+            
+        }
+
         public Excel(string path, int sheet)
         {
             this.path = path;
             wb = excel.Workbooks.Open(path);
             ws = wb.Worksheets[sheet];
+        }
+
+        public void CreateNewFile()
+        {
+            this.wb = excel.Workbooks.Add(XlWBATemplate.xlWBATWorksheet);
         }
 
         public string ReadCell(int i, int j)
