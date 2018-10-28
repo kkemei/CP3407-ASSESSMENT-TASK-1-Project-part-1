@@ -12,3 +12,4 @@ C:\Users\Kip\Dropbox\2018\Semester 2\Advanced Software Engineering\Assesment\A2\
 C:\Users\Kip\Dropbox\2018\Semester 2\Advanced Software Engineering\Assesment\A2\Program\Wilderness Weather Station\Wilderness Weather Station\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Kip\Dropbox\2018\Semester 2\Advanced Software Engineering\Assesment\A2\Program\Wilderness Weather Station\Wilderness Weather Station\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Kip\Dropbox\2018\Semester 2\Advanced Software Engineering\Assesment\A2\Program\Wilderness Weather Station\Wilderness Weather Station\obj\Debug\Wilderness Weather Station.csproj.CopyComplete
+C:\Users\Kip\Dropbox\2018\Semester 2\Advanced Software Engineering\Assesment\A2\Program\Wilderness Weather Station\Wilderness Weather Station\obj\Debug\Wilderness Weather Station.csproj.ResolveComReference.cache
